@@ -19,6 +19,7 @@ public class HelloController {
         return "ok";
     }
 
+    // "10,000" -> 10000
     @GetMapping("/hello-v2")
     public String helloV1(@RequestParam Integer data) {
         System.out.println("data = " + data);
